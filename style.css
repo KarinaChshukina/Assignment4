@@ -1,0 +1,27 @@
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("https://artcard.kz/image/cache/catalog/22.07.19/70-084к-500x500-product_list.jpg");
+    background-color: #cccccc; 
+    background-repeat:round; 
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+}
+
+hr {
+    margin-left: 0;
+    width: 80px;
+    background: #000;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Qalyn calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Qalyn calculator</h1>
+                <form>
+                    <label for="groomsName">Groom's name is</label>
+                      <input id="groomsName" type="text" name="groomsName" >
+                      <hr>
+                    <label for="startingBid">Starting bid is</label>
+                      <input id="startingBid" type="number" name="startingBid" >
+                      <hr>
+                    <label for="education">Education level:</label><br>
+                    <select id="education">
+                        <option value="1"></option>
+                        <option value="1.5" id="bachelor">Bachelor's degree</option>
+                        <option value="1.2" id="College">College degree</option>
+                        <option value="1.05" id="highSchool">High school degree</option>
+                        <option value="0.9" id="middleSchool">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family">Family networth</label><br>
+                    <select id="networth">
+                        <option value="1"></option>
+                        <option value="2" id="high">More than 100,000$</option>
+                        <option value="1.5" id="middle">Between 50,000$ and 100,000$</option>
+                        <option value="1.2" id="low">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                    <label for="skills" id="skills" class="skills" >Groom's skills</label><br>
+                    <input type="checkbox" value="200" id="skill1" class="skills" >Playing on dombra<br>
+                    <input type="checkbox" value="100" id="skill2" class="skills">Good cook<br>
+                    <input type="checkbox" value="150" id="skill3" class="skills">Easygoing character<br>
+                    <input type="checkbox" value="250"id="skill4" class="skills">Sings well<br>
+                    </label>
+                    <hr>
+                    <label for="age" id="age" class="age">Groom's age</label><br>
+                    <input type="radio" value="1.5" name="age1" class="age">Between 18-23<br>
+                    <input type="radio" value="1.2" name="age1" class="age"> Between 24-27<br>
+                    <input type="radio" value="0.95" name="age1" class="age">28+<br>
+                    </label>
+                    <hr>
+                    <label for="reputation" id="reputation" class="reputation">Groom's reputation</label><br>
+                    <input type="checkbox" value="0.85" class="reputation">Gossips about his parent's attitude<br>
+                    <input type="checkbox" value="0.9" class="reputation">Gossips about his character<br>
+                    <input type="checkbox" value="-200" class="reputation">General gossips around his person<br>
+                    </label>
+                    <hr>
+                    <textarea id="loveLetter" maxlength="500"></textarea>
+                </form>
+                <button id="result" type="button" class="btn btn-primary">Calculate price</button>
+                <p id="show"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
